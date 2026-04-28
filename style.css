@@ -124,6 +124,7 @@ h1, h2, h3 {
 .profile-img {
     width: 360px;
     height: 360px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -131,7 +132,7 @@ h1, h2, h3 {
     box-shadow: 0 0 50px var(--primary-glow);
     z-index: 2;
     position: relative;
-    background: #1e293b; /* Placeholder color */
+    background: #1e293b;
     display: block;
 }
 
