@@ -117,19 +117,20 @@ h1, h2, h3 {
 .hero-image-container {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align to the right of the grid */
     align-items: center;
 }
 
 .profile-img {
-    width: 320px;
-    height: 320px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--primary);
-    box-shadow: 0 0 40px var(--primary-glow);
+    box-shadow: 0 0 50px var(--primary-glow);
     z-index: 2;
     position: relative;
+    background: var(--bg); /* Prevents transparent artifacts */
 }
 
 .profile-glow {
@@ -417,6 +418,24 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .hero { padding: 120px 0 40px; }
+    .hero-grid { 
+        grid-template-columns: 1fr; 
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-image-container {
+        justify-content: center;
+        order: -1; /* Image appears first on mobile */
+    }
+    .profile-img {
+        width: 260px;
+        height: 260px;
+    }
+    .hero-content {
+        text-align: center;
+    }
     .hero h1 { font-size: 3rem; }
+    .hero-btns { justify-content: center; }
     .project-grid { grid-template-columns: 1fr; }
 }
