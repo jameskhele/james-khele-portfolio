@@ -1,6 +1,17 @@
 // Initialize Icons
 document.addEventListener('DOMContentLoaded', () => {
     lucide.createIcons();
+
+    // Image Fallback Logic
+    const img = document.querySelector('.profile-img');
+    const extensions = ['jpg', 'png', 'jpeg', 'JPG', 'PNG'];
+    let currentIndex = 0;
+
+    img.onerror = function() {
+        if (currentIndex < extensions.length) {
+            this.src = `profile.${extensions[currentIndex++]}`;
+        }
+    };
 });
 
 // Scroll Reveal Animation
