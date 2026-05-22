@@ -16,6 +16,29 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "James Khele | Autonomous Systems & SaaS Architect",
   description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+  metadataBase: new URL("https://jameskhele.github.io/james-khele-portfolio"),
+  openGraph: {
+    title: "James Khele | Autonomous Systems & SaaS Architect",
+    description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+    url: "https://jameskhele.github.io/james-khele-portfolio/",
+    siteName: "James Khele Portfolio",
+    images: [
+      {
+        url: "https://jameskhele.github.io/james-khele-portfolio/profile.png",
+        width: 800,
+        height: 800,
+        alt: "James Khele | Autonomous Systems & SaaS Architect",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "James Khele | Autonomous Systems & SaaS Architect",
+    description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+    images: ["https://jameskhele.github.io/james-khele-portfolio/profile.png"],
+  },
 };
 
 export default function RootLayout({
