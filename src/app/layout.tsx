@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "James Khele | Autonomous Systems & SaaS Architect",
-  description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+  title: "James Khele | Software Engineer",
+  description: "Software Engineer building production SaaS platforms, AI systems, and business automation tools. TypeScript, React, Next.js, Node.js, Python, FastAPI, PostgreSQL.",
   metadataBase: new URL("https://jameskhele.github.io/james-khele-portfolio"),
   openGraph: {
-    title: "James Khele | Autonomous Systems & SaaS Architect",
-    description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+    title: "James Khele | Software Engineer",
+    description: "Software Engineer building production SaaS platforms, AI systems, and business automation tools.",
     url: "https://jameskhele.github.io/james-khele-portfolio/",
     siteName: "James Khele Portfolio",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: "https://jameskhele.github.io/james-khele-portfolio/profile.png",
         width: 800,
         height: 800,
-        alt: "James Khele | Autonomous Systems & SaaS Architect",
+        alt: "James Khele — Software Engineer",
       },
     ],
     locale: "en_US",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "James Khele | Autonomous Systems & SaaS Architect",
-    description: "Elite product engineer specializing in scalable SaaS architectures, autonomous AI workflows, and high-throughput enterprise infrastructure.",
+    title: "James Khele | Software Engineer",
+    description: "Software Engineer building production SaaS platforms, AI systems, and business automation tools.",
     images: ["https://jameskhele.github.io/james-khele-portfolio/profile.png"],
   },
 };
