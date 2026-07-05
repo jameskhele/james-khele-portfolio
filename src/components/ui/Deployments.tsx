@@ -7,9 +7,9 @@ const projects = [
   {
     id: "aether-os",
     title: "AETHER-OS",
-    type: "Multi-Agent AI Orchestration Platform",
-    stack: ["Next.js 15", "FastAPI", "Python", "LangGraph", "PostgreSQL", "ChromaDB", "WebSockets", "Docker"],
-    desc: "Architected a real-time multi-agent system coordinating 3 autonomous AI agents over WebSockets under 200ms latency. Built on a LangGraph orchestration engine with vector-DB RAG retrieval, achieving a 40% information retrieval relevance improvement. Containerized CI/CD deploying in under 4 minutes.",
+    type: "Real-Time Distributed AI Backend Platform",
+    stack: ["FastAPI", "Python", "WebSockets", "ChromaDB", "Docker", "PostgreSQL", "Next.js"],
+    desc: "Architected a real-time event-driven microservice system in Python using FastAPI and WebSockets, establishing bidirectional connection lifecycles with under 200ms latency. Developed vector-search RAG retrieval pipelines in ChromaDB with optimized document chunking, achieving a 40% improvement in context relevance. Fully containerized with Docker.",
     metrics: "Under 200ms inter-agent latency · 40% RAG relevance improvement · 4-minute containerized deploys",
     github: "https://github.com/jameskhele/AETHER-OS",
     live: "https://aether-os-web.vercel.app/",
@@ -20,8 +20,8 @@ const projects = [
     id: "bridgeforge",
     title: "BridgeForge",
     type: "B2B Automation Platform for Revenue Operations",
-    stack: ["React", "Next.js", "Node.js", "n8n", "Make.com", "HubSpot API", "Twilio API", "Clearbit API"],
-    desc: "Built a 6-tool B2B automation suite — Friction Auditor, Pitch Builder, Margin Calculator, Legal Vault, Dashboard, and Operator Mode — that audits business workflows and deploys middleware automations to eliminate operational friction.",
+    stack: ["React", "Next.js", "Node.js", "n8n", "Make.com", "HubSpot API", "Twilio API", "PostgreSQL"],
+    desc: "Built a 6-tool B2B automation suite — Friction Auditor, Pitch Builder, Margin Calculator, Legal Vault, Dashboard, and Operator Mode — that audits business workflows and deploys middleware automations. Connects HubSpot, Twilio, and Clearbit APIs, saving clients 18+ hours/month and boosting conversion rates.",
     metrics: "18+ hours/month saved per client · 35% increase in lead-to-call conversion · 6 integrated tools",
     github: "https://github.com/jameskhele/bridgeforge-launchpad",
     live: "https://jameskhele.github.io/bridgeforge-launchpad/",
@@ -29,14 +29,14 @@ const projects = [
     border: "border-indigo-500/30",
   },
   {
-    id: "shevynrobert",
-    title: "ShevynRobert.net",
-    type: "Client Portfolio — Performance-Optimized",
-    stack: ["Next.js", "React", "Tailwind CSS", "Vercel", "SSR"],
-    desc: "Engineered a professional portfolio site for a US client using Next.js server-side rendering, responsive design, and automated CI/CD via Vercel. Optimized for Core Web Vitals and zero-downtime deployment.",
-    metrics: "Lighthouse 96 · Sub-1.2s LCP · Zero-downtime CI/CD · 100% on-time delivery",
-    github: "https://github.com/jameskhele",
-    live: "https://shevynrobert.net",
+    id: "examiner",
+    title: "EXAMINER",
+    type: "Java Examination Scheduler (Capstone Project)",
+    stack: ["Java", "MySQL", "JDBC", "JUnit"],
+    desc: "Engineered a Java scheduling application applying OOP principles to map 50+ subject categories and 800+ entities. Normalized database schemas in MySQL to 3NF and utilized JDBC to enforce transaction boundaries and database integrity. Implemented backtracking search and constraint propagation to resolve scheduling resources efficiently.",
+    metrics: "Maps 50+ subject categories · 800+ entities mapped · reduces admin overhead by 38 hours per semester",
+    github: "https://github.com/jameskhele/EXAMINER",
+    live: "",
     color: "from-cyan-500/20 to-transparent",
     border: "border-cyan-500/30",
   },
@@ -86,15 +86,17 @@ export default function Deployments() {
                     <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                   </svg>
                 </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-white text-black hover:bg-gray-200 transition-colors flex items-center justify-center w-10 h-10"
-                  title="View Live"
-                >
-                  <ExternalLink size={18} />
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-white text-black hover:bg-gray-200 transition-colors flex items-center justify-center w-10 h-10"
+                    title="View Live"
+                  >
+                    <ExternalLink size={18} />
+                  </a>
+                )}
               </div>
             </div>
 

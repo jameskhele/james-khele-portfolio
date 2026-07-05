@@ -2,6 +2,7 @@ import Hero from "@/components/ui/Hero";
 import BentoGrid from "@/components/ui/BentoGrid";
 import Experience from "@/components/ui/Experience";
 import Deployments from "@/components/ui/Deployments";
+import Publications from "@/components/ui/Publications";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
             <a href="#projects" className="text-xs font-mono text-gray-400 hover:text-white transition-colors">
               Projects
             </a>
+            <a href="#publications" className="text-xs font-mono text-gray-400 hover:text-white transition-colors">
+              Publications
+            </a>
             <a
               href="https://drive.google.com/file/d/1P_ExKmZy_nozb6Z3pWrym1U_2gUieJkc/view?usp=sharing"
               target="_blank"
@@ -38,6 +42,7 @@ export default function Home() {
       <BentoGrid />
       <Experience />
       <Deployments />
+      <Publications />
 
       {/* Tech Stack Section */}
       <section className="w-full max-w-5xl mx-auto px-4 py-16 border-t border-white/5">

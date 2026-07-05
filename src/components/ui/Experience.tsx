@@ -8,27 +8,32 @@ const workExperience = [
     role: "Software Engineer",
     company: "VentureSeed",
     location: "USA (Remote from India)",
-    duration: "Feb 2026 – Present",
+    duration: "Feb 2026 – Jun 2026",
     desc: "Production SaaS engineering across two B2B platforms — DartCode AI (code-generation tool) and IntelliToggle (feature-management system).",
     bullets: [
-      "Shipped 12 production features end-to-end, owning technical design, implementation, testing, deployment, and post-release monitoring.",
-      "Designed and deployed 10 production REST APIs with idempotent writes and connection pooling, cutting p95 response latency by 35%.",
-      "Resolved 15 P1/P2 production incidents within SLA, improving monthly platform uptime from 99.2% to 99.8%.",
-      "Reviewed pull requests daily across a 4-timezone distributed team, maintaining weekly deployment cadence via GitHub CI/CD."
+      "Developed backend features for two B2B SaaS platforms, contributing to production releases in Agile cycles.",
+      "Developed and enhanced REST APIs using Node.js (Express.js) and FastAPI, improving performance and maintainability.",
+      "Optimized SQL queries and PostgreSQL execution plans, reducing p95 API response times by 35% under peak workloads.",
+      "Diagnosed and resolved 15 P1/P2 production incidents using log streams and metrics to maintain 99.8% platform uptime.",
+      "Collaborated with senior engineers in peer code reviews to improve code quality, maintainability, and API reliability.",
+      "Containerized backend services using Docker while automating build and deployment workflows through GitHub Actions CI/CD.",
+      "Wrote comprehensive automated test suites using pytest and Jest to validate system logic and maintain 90%+ unit test coverage."
     ],
-    tags: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "GitHub Actions"],
+    tags: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "FastAPI", "Docker", "GitHub Actions"],
   },
   {
-    role: "Full-Stack Developer",
-    company: "Shramic Networks",
+    role: "Co-Founder & Software Engineer",
+    company: "Shramic Networks Pvt. Ltd.",
     location: "Bangalore, India",
-    duration: "Feb 2026 – May 2026",
-    desc: "Built a community platform and agricultural SaaS application from zero to production.",
+    duration: "Jun 2025 – Feb 2026",
+    desc: "Database Engineering & REST API Design.",
     bullets: [
-      "Architected and shipped the platform from scratch, reaching 500+ users in the first month with zero critical defects at launch.",
-      "Designed PostgreSQL schemas for 12 entities, built JWT/RBAC authentication, and delivered an admin dashboard with real-time analytics."
+      "Designed and developed backend REST APIs and PostgreSQL database schemas supporting 500+ active users with 3NF normalization.",
+      "Implemented secure token-based JWT authentication and Role-Based Access Control (RBAC) security filters to protect sensitive REST endpoints.",
+      "Constructed automated CI/CD pipelines to build containerized Docker images and run automated regression test suites.",
+      "Ensured database integrity by applying constraints, normalization rules, and optimizing SQL execution plans."
     ],
-    tags: ["React", "Node.js", "PostgreSQL", "REST APIs", "JWT"],
+    tags: ["Node.js", "PostgreSQL", "GitLab CI/CD", "Linux", "REST APIs", "JWT", "3NF Normalization"],
   },
   {
     role: "Freelance Software Engineer",
